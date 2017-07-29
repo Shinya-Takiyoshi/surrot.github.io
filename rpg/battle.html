@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="../js/controller.js"></script>
+<title>戦闘中</title>
+</head>
+<body onload="battle()">
+敵のHP:<div id = "baitarity">10</div><br>
+モンスターのような筋肉が現れました。どうしますか？<br>
+<img src="../img/kinniku.jpg" height ="100" width="100">
+<form action="./php/battle.php" method="POST">
+<input type="hidden" value=""  name= "HP" id ="HP">
+<input type="submit" value="攻撃"  name= "battle"><input type="submit" value="道具"  name= "battle"><br>
+<input type="submit" value="逃げる"  name= "battle"><input type="submit" value="作戦"  name= "battle"><br>
+</form>
+</body>
+</html>
